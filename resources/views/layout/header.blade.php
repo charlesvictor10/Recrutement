@@ -17,7 +17,7 @@
             <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                 <li><a href="{{route('accueil')}}">Accueil</a></li>
                 <li><a href="{{route('listeOffres')}}">Offres</a></li>
-                <li><a href="#">Espace candidats</a></li>
+                <li><a href="{{route('login')}}">Espace candidats</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">UFRs</a>
                     <ul class="dropdown-menu animated fadeOutUp" style="display: none; opacity: 1;">

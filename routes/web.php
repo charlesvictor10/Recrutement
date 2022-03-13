@@ -1,5 +1,8 @@
 <?php
 namespace App\Http\Controllers\Shop;
+namespace App\Http\Controllers\Auth;
+
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,5 +23,7 @@ Route::get('/ufr/{id}',"App\\Http\\Controllers\\Shop\\MainController@offresParUf
 Route::get('/tag/{id}',"App\\Http\\Controllers\\Shop\\MainController@viewByTag")->name('voir_emploi_par_tag');
 
 Auth::routes();
+
+//Route::get('/login',"App\\Http\\Controllers\\Auth\\LoginController")->name('login');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
